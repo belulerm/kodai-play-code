@@ -5,7 +5,7 @@ import { Terminal, Play, Trash2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { useCallback } from 'react';
-import { validateChallenge } from '@/lib/validateChallenge';
+import { validateChallengeDetailed } from '@/lib/validateChallenge';
 
 export const TerminalPanel = () => {
   const { t } = useTranslation();
@@ -32,14 +32,14 @@ export const TerminalPanel = () => {
       (p) => p.challenge_id === activeChallenge.id && p.status === 'completed'
     );
 
-    // Use real validation
-    const isCorrect = validateChallenge(editorCode, {
-      expectedCode: activeChallenge.expected_output,
-      pattern: new RegExp(activeChallenge.expected_output.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s*'), 'i'),
+    // Use real execution validation
+    const result = await validateChallengeDetailed(editorCode, {
+      expectedOutput: activeChallenge.expected_output,
+      language: activeChallenge.language,
     });
 
-    if (isCorrect) {
-      addTerminalLine({ content: `✓ Output matches expected: "${activeChallenge.expected_output}"`, type: 'success' });
+    if (result.isValid) {
+      addTerminalLine({ content: result.message || `✓ Output matches expected: "${activeChallenge.expected_output}"`, type: 'success' });
 
       if (!alreadyCompleted) {
         addTerminalLine({ content: `+${activeChallenge.xp_reward} XP earned!`, type: 'success' });
@@ -73,7 +73,11 @@ export const TerminalPanel = () => {
 
       triggerCelebration();
     } else {
-      addTerminalLine({ content: `✗ Expected: "${activeChallenge.expected_output}" but got different output`, type: 'error' });
+      if (result.actual) {
+        addTerminalLine({ content: `✗ Expected: "${activeChallenge.expected_output}" but got: "${result.actual}"`, type: 'error' });
+      } else {
+        addTerminalLine({ content: `✗ ${result.message}`, type: 'error' });
+      }
       addTerminalLine({ content: 'Try again! Hint: Check your code carefully.', type: 'info' });
     }
   }, [clearTerminal, addTerminalLine, editorCode, activeChallenge, triggerCelebration, updateXP, addCompletedProgress, profile, userProgress]);
