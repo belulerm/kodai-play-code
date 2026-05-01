@@ -120,7 +120,22 @@
     "faq_3_q": "A është KodAI falas?",
     "faq_3_a": "KodAI është falas gjatë periudhës tonë të aksesit të hershëm. Krijo një llogari sot dhe siguro akses falas në të gjitha rrugët aktuale të mësimit.",
     "faq_4_q": "Si ndryshon KodAI nga platformat e tjera?",
-    "faq_4_a": "Ndryshe nga kurset me video, KodAI të bën të shkruash kod real që nga minuta e parë. Tutori ynë AI jep sugjerime të personalizuara pa spoiluar përgjigjen, dhe sistemi i XP të lojëzuar të mban të motivuar."
+    "faq_4_a": "Ndryshe nga kurset me video, KodAI të bën të shkruash kod real që nga minuta e parë. Tutori ynë AI jep sugjerime të personalizuara pa spoiluar përgjigjen, dhe sistemi i XP të lojëzuar të mban të motivuar.",
+    "social_title": "I dashur nga nxënësit në mbarë botën",
+    "social_subtitle": "Bashkohu me mijëra që po ndërtojnë aftësi reale kodimi me KodAI.",
+    "stat_learners": "Nxënës Aktivë",
+    "stat_kids": "Fëmijë që Filluan Kodimin",
+    "stat_challenges": "Sfida të Zgjidhura",
+    "stat_rating": "Vlerësimi Mesatar",
+    "testimonial_1_quote": "Ndërtova programin tim të parë funksional brenda një jave. Tutori AI shpjegon si një mësues i vërtetë — i durueshëm dhe i qartë.",
+    "testimonial_1_name": "Ariana K.",
+    "testimonial_1_role": "12 vjeç, Tiranë",
+    "testimonial_2_quote": "Djali im shkoi nga zero interes për kompjuterët në kodim çdo ditë pas shkollës. KodAI e bëri të dukej si një lojë.",
+    "testimonial_2_name": "Marko D.",
+    "testimonial_2_role": "Prind i një 10-vjeçari",
+    "testimonial_3_quote": "Shumë më tërheqëse se kurset me video. Vërtet mbaj mend atë që mësoj sepse shkruaj kod që nga minuta e parë.",
+    "testimonial_3_name": "Elira S.",
+    "testimonial_3_role": "Fillestar, 15 vjeç"
   },
   "waitlist": {
     "title": "Nuk je gati të kodosh ende?",
