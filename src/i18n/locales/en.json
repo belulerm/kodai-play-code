@@ -120,7 +120,22 @@
     "faq_3_q": "Is KodAI free to use?",
     "faq_3_a": "KodAI is free during our early access period. Create an account today and lock in free access to all current learning paths.",
     "faq_4_q": "How is KodAI different from other platforms?",
-    "faq_4_a": "Unlike video-based courses, KodAI makes you write real code from the first minute. Our AI tutor gives personalized hints without spoiling the answer, and the gamified XP system keeps you motivated."
+    "faq_4_a": "Unlike video-based courses, KodAI makes you write real code from the first minute. Our AI tutor gives personalized hints without spoiling the answer, and the gamified XP system keeps you motivated.",
+    "social_title": "Loved by learners worldwide",
+    "social_subtitle": "Join thousands already building real coding skills with KodAI.",
+    "stat_learners": "Active Learners",
+    "stat_kids": "Kids Started Coding",
+    "stat_challenges": "Challenges Solved",
+    "stat_rating": "Average Rating",
+    "testimonial_1_quote": "I built my first working program in a week. The AI tutor explains things like a real teacher — patient and clear.",
+    "testimonial_1_name": "Ariana K.",
+    "testimonial_1_role": "Age 12, Tirana",
+    "testimonial_2_quote": "My son went from zero interest in computers to coding every day after school. KodAI made it feel like a game.",
+    "testimonial_2_name": "Marco D.",
+    "testimonial_2_role": "Parent of a 10-year-old",
+    "testimonial_3_quote": "Way more engaging than video courses. I actually retain what I learn because I write code from minute one.",
+    "testimonial_3_name": "Elira S.",
+    "testimonial_3_role": "Beginner, Age 15"
   },
   "waitlist": {
     "title": "Not ready to code yet?",
