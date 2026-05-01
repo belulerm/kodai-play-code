@@ -24,6 +24,7 @@ import {
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { HeroEditor } from '@/components/landing/HeroEditor';
 import { WaitlistForm } from '@/components/landing/WaitlistForm';
+import { SocialProof } from '@/components/landing/SocialProof';
 
 const Landing = () => {
   const { t } = useTranslation();
