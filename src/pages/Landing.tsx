@@ -24,6 +24,7 @@ import {
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { HeroEditor } from '@/components/landing/HeroEditor';
 import { WaitlistForm } from '@/components/landing/WaitlistForm';
+import { SocialProof } from '@/components/landing/SocialProof';
 
 const Landing = () => {
   const { t } = useTranslation();
@@ -214,6 +215,9 @@ const Landing = () => {
           </Carousel>
         </div>
       </section>
+
+      {/* ── Social Proof ────────────────────────────── */}
+      <SocialProof />
 
       {/* ── FAQ ─────────────────────────────────────── */}
       <section className="border-t border-border py-24 sm:py-32">
